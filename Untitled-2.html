@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=1251">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Карусель с 6 кусочками</title>
+ <title>РљР°СЂСѓСЃРµР»СЊ СЃ 6 РєСѓСЃРѕС‡РєР°РјРё</title>
  <style>
       body {
             font-family: Arial, sans-serif;
@@ -12,13 +12,13 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            background: linear-gradient(135deg, #f0f0f0, #d2a5d4); /* Уникальный градиентный фон */
+            background: linear-gradient(135deg, #f0f0f0, #d2a5d4); /* РЈРЅРёРєР°Р»СЊРЅС‹Р№ РіСЂР°РґРёРµРЅС‚РЅС‹Р№ С„РѕРЅ */
         }
 
 .roulette-container {
             text-align: center;
             position: relative;
-            width: 450px; /* Размер контейнера для большего круга */
+            width: 450px; /* Р Р°Р·РјРµСЂ РєРѕРЅС‚РµР№РЅРµСЂР° РґР»СЏ Р±РѕР»СЊС€РµРіРѕ РєСЂСѓРіР° */
             height: 450px;
         }
 
@@ -30,8 +30,8 @@
             height: 450px;
             border-radius: 50%;
              background-color: #5e0897;
-            border: 40px solid #212121; /* Золотая рамка */
-            z-index: 0; /* Сзади рулетки */
+            border: 40px solid #212121; /* Р—РѕР»РѕС‚Р°СЏ СЂР°РјРєР° */
+            z-index: 0; /* РЎР·Р°РґРё СЂСѓР»РµС‚РєРё */
         }
 
         .lamp {
@@ -42,10 +42,10 @@
             height: 14px;
             background: white;
             border-radius: 50%;
-            transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-250px); /* По периметру большего круга */
+            transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-250px); /* РџРѕ РїРµСЂРёРјРµС‚СЂСѓ Р±РѕР»СЊС€РµРіРѕ РєСЂСѓРіР° */
             box-shadow: 0 0 12px rgba(255,255,255,1), 0 0 20px rgba(138, 43, 226, 0.5);
             z-index: 2;
-            animation: blink 1s infinite ease-in-out; /* Мигающая анимация */
+            animation: blink 1s infinite ease-in-out; /* РњРёРіР°СЋС‰Р°СЏ Р°РЅРёРјР°С†РёСЏ */
         }
 
         @keyframes blink {
@@ -58,16 +58,16 @@
             border-radius: 50%;
             position: relative;
             overflow: hidden;
-            border: 1px solid #212121; /* Золотая рамка */
+            border: 1px solid #212121; /* Р—РѕР»РѕС‚Р°СЏ СЂР°РјРєР° */
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
-            transition: transform 4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Плавная анимация вращения */
+            transition: transform 4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* РџР»Р°РІРЅР°СЏ Р°РЅРёРјР°С†РёСЏ РІСЂР°С‰РµРЅРёСЏ */
             background: conic-gradient(
-                #840cd5 0deg 60deg,     /* Красный сектор 1 */
-                #ffe345 60deg 120deg,   /* Золотой сектор 2 (главный приз) */
-                #840cd5 120deg 180deg,  /* Красный сектор 2 */
-                #e1e1e1 180deg 240deg,  /* Белый сектор 2 */
-                #840cd5 240deg 300deg,  /* Красный сектор 3 */
-                #e1e1e1 300deg 360deg   /* Белый сектор 3 */
+                #840cd5 0deg 60deg,     /* РљСЂР°СЃРЅС‹Р№ СЃРµРєС‚РѕСЂ 1 */
+                #ffe345 60deg 120deg,   /* Р—РѕР»РѕС‚РѕР№ СЃРµРєС‚РѕСЂ 2 (РіР»Р°РІРЅС‹Р№ РїСЂРёР·) */
+                #840cd5 120deg 180deg,  /* РљСЂР°СЃРЅС‹Р№ СЃРµРєС‚РѕСЂ 2 */
+                #e1e1e1 180deg 240deg,  /* Р‘РµР»С‹Р№ СЃРµРєС‚РѕСЂ 2 */
+                #840cd5 240deg 300deg,  /* РљСЂР°СЃРЅС‹Р№ СЃРµРєС‚РѕСЂ 3 */
+                #e1e1e1 300deg 360deg   /* Р‘РµР»С‹Р№ СЃРµРєС‚РѕСЂ 3 */
             );
             margin: 0 auto;
         }
@@ -78,7 +78,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) rotate(var(--rotation)) translateY(-160px) rotate(var(--label-rotation));
-            font-size: 14px; /* Уменьшил шрифт для картинки */
+            font-size: 14px; /* РЈРјРµРЅСЊС€РёР» С€СЂРёС„С‚ РґР»СЏ РєР°СЂС‚РёРЅРєРё */
             font-weight: bold;
             color: #000000;
             text-align: center;
@@ -91,7 +91,7 @@
         }
 
         .section-label img {
-            width: 30px; /* Размер картинки */
+            width: 30px; /* Р Р°Р·РјРµСЂ РєР°СЂС‚РёРЅРєРё */
             height: 30px;
             margin-bottom: 5px;
         }
@@ -104,7 +104,7 @@
             height: 0;
             border-left: 21px solid transparent;
             border-right: 21px solid transparent;
-            border-top: 36px solid #212121; /* Золотой указатель */
+            border-top: 36px solid #212121; /* Р—РѕР»РѕС‚РѕР№ СѓРєР°Р·Р°С‚РµР»СЊ */
 
             z-index: 3;
         }
@@ -117,7 +117,7 @@
             height: 0;
             border-left: 15px solid transparent;
             border-right: 15px solid transparent;
-            border-top: 28px solid #ffe345; /* Золотой указатель */
+            border-top: 28px solid #ffe345; /* Р—РѕР»РѕС‚РѕР№ СѓРєР°Р·Р°С‚РµР»СЊ */
 
             z-index: 4;
         }
@@ -142,7 +142,7 @@
             height: 20px;
             background: white;
             border-radius: 50%;
-            box-shadow: 0 0 10px rgba(255,255,255,0.9); /* Свечение центральной лампочки */
+            box-shadow: 0 0 10px rgba(255,255,255,0.9); /* РЎРІРµС‡РµРЅРёРµ С†РµРЅС‚СЂР°Р»СЊРЅРѕР№ Р»Р°РјРїРѕС‡РєРё */
         }
         .spin-button {
             margin-top: 20px;
@@ -165,7 +165,7 @@
             cursor: not-allowed;
         }
 
-        /* Модальное окно */
+        /* РњРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ */
         .modal {
             display: none;
             position: fixed;
@@ -215,17 +215,17 @@
 
 
         .img {
-        width: 150px; /* Увеличь ширину, например, до 50px */
-        height: 150px; /* Увеличь высоту, например, до 50px */
-        object-fit: contain; /* Чтобы картинка не искажалась, если размеры не квадратные */
-        margin: 5px; /* Небольшой отступ от текста или краёв, если нужно */
+        width: 150px; /* РЈРІРµР»РёС‡СЊ С€РёСЂРёРЅСѓ, РЅР°РїСЂРёРјРµСЂ, РґРѕ 50px */
+        height: 150px; /* РЈРІРµР»РёС‡СЊ РІС‹СЃРѕС‚Сѓ, РЅР°РїСЂРёРјРµСЂ, РґРѕ 50px */
+        object-fit: contain; /* Р§С‚РѕР±С‹ РєР°СЂС‚РёРЅРєР° РЅРµ РёСЃРєР°Р¶Р°Р»Р°СЃСЊ, РµСЃР»Рё СЂР°Р·РјРµСЂС‹ РЅРµ РєРІР°РґСЂР°С‚РЅС‹Рµ */
+        margin: 5px; /* РќРµР±РѕР»СЊС€РѕР№ РѕС‚СЃС‚СѓРї РѕС‚ С‚РµРєСЃС‚Р° РёР»Рё РєСЂР°С‘РІ, РµСЃР»Рё РЅСѓР¶РЅРѕ */
     }
     </style>
 </head>
 <body>
     <div class="roulette-container">
         <div class="lamp-container">
-            <!-- 16 лампочек по кругу -->
+            <!-- 16 Р»Р°РјРїРѕС‡РµРє РїРѕ РєСЂСѓРіСѓ -->
             <div class="lamp" style="--angle: 0deg;"></div>
             <div class="lamp" style="--angle: 22.5deg;"></div>
             <div class="lamp" style="--angle: 45deg;"></div>
@@ -250,43 +250,43 @@
             <div class="center">
                 <div class="center-lamp"></div>
             </div>
-            <!-- Надписи и картинки в секторах (кастомизируйте текст и src картинок здесь) -->
+            <!-- РќР°РґРїРёСЃРё Рё РєР°СЂС‚РёРЅРєРё РІ СЃРµРєС‚РѕСЂР°С… (РєР°СЃС‚РѕРјРёР·РёСЂСѓР№С‚Рµ С‚РµРєСЃС‚ Рё src РєР°СЂС‚РёРЅРѕРє Р·РґРµСЃСЊ) -->
  <div class="section-label" style="--rotation: 30deg; --label-rotation: -3deg;">              
-         <img  style="width: 55px; height: 55px;" src="file:///C:/Users/Вася/Desktop/72ppi/222.png" alt="Приз 1">
-               <b style="font-size: 13px; color: #ffffff;">   ПРОМОКОД НА 40%</br> В ЧИТАЙ ГОРОД</b> 
+         <img  style="width: 55px; height: 55px;" src="file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/222.png" alt="РџСЂРёР· 1">
+               <b style="font-size: 13px; color: #ffffff;">   РџР РћРњРћРљРћР” РќРђ 40%</br> Р’ Р§РРўРђР™ Р“РћР РћР”</b> 
             </div>
             <div class="section-label" style="--rotation: 90deg; --label-rotation: 5deg;">
-                <img style="width: 60px; height: 60px;" src="file:///C:/Users/Вася/Desktop/72ppi/1.png" alt="Приз 2">
-              <b style="font-size: 20px; color: #fe5d00;">  ГЛАНЫЙ </br> ПРИЗ  </b> 
+                <img style="width: 60px; height: 60px;" src="file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/1.png" alt="РџСЂРёР· 2">
+              <b style="font-size: 20px; color: #fe5d00;">  Р“Р›РђРќР«Р™ </br> РџР РР—  </b> 
             </div>
             <div class="section-label" style="--rotation: 150deg; --label-rotation: -5deg;">
-                <img  style="width: 55px; height: 55px;" src="file:///C:/Users/Вася/Desktop/72ppi/333.png" alt="Приз 3">
-                <b style="color: #ffffff;">    НИЧЕГО</b>       
+                <img  style="width: 55px; height: 55px;" src="file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/333.png" alt="РџСЂРёР· 3">
+                <b style="color: #ffffff;">    РќРР§Р•Р“Рћ</b>       
             </div>
             <div class="section-label" style="--rotation: 210deg; --label-rotation: 5deg;">
-                <img  style="width: 55px; height: 55px;" src="file:///C:/Users/Вася/Desktop/72ppi/2.png" alt="Приз 4">
-                     <b style="color: #840cd5;">   ПРОМОКОД </br>НА 10% НА ИВИ</b>
+                <img  style="width: 55px; height: 55px;" src="file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/2.png" alt="РџСЂРёР· 4">
+                     <b style="color: #840cd5;">   РџР РћРњРћРљРћР” </br>РќРђ 10% РќРђ РР’Р</b>
 
             </div>
             <div class="section-label" style="--rotation: 270deg; --label-rotation: -5deg;">
                <b style="font-size: 60px; color: #ffffff;">   ?</b>
             </div>
             <div class="section-label" style="--rotation: 330deg; --label-rotation: -5deg;">
-                <img  style="width: 55px; height: 55px;" src="file:///C:/Users/Вася/Desktop/72ppi/3.png" alt="Приз 6">
-              <b style="color: #840cd5;">     НИЧЕГО</b>
+                <img  style="width: 55px; height: 55px;" src="file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/3.png" alt="РџСЂРёР· 6">
+              <b style="color: #840cd5;">     РќРР§Р•Р“Рћ</b>
             </div>
         
         </div>
         </br></br>
         
-        <button class="spin-button" id="spinButton" onclick="spinWheel()">Крутить рулетку!</button>
+        <button class="spin-button" id="spinButton" onclick="spinWheel()">РљСЂСѓС‚РёС‚СЊ СЂСѓР»РµС‚РєСѓ!</button>
     </div>
 
-    <!-- Модальное окно -->
+    <!-- РњРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ -->
     <div id="resultModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Результат!</h2>
+            <h2>Р РµР·СѓР»СЊС‚Р°С‚!</h2>
             <div id="resultText" class="result-text"></div>
             <button onclick="closeModal()" style="margin-top: 10px; padding: 10px; background: #212121; color: white; border: none; border-radius: 5px; cursor: pointer;">OK</button>
         </div>
@@ -294,28 +294,28 @@
 
     <script>
         const sections = [
-            {  text: 'Приз 1, теперь ты пидр  лови промокод в чг',img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FF0000' },
-            {  text: 'Приз 2, теперь ты пидр  лови главынй приз',img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FFFFFF' },
-            { text: 'Приз 3, теперь ты пидр  фиг те', img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FF0000' },
-            { text: 'Приз 4, теперь ты пидр  лови промо на ИВИ', img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FFFFFF' },
-            {text: 'Приз 5, теперь ты пидр  пока не придумал шо те', img:'file:///C:/Users/Вася/Desktop/72ppi/222.png',  color: '#FF0000' },
-            { text: 'Приз 6, теперь ты пидр фиг те', img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FFFFFF' }
-        ]; // Массив секторов с текстом (теперь 7, кастомизируйте здесь)
+            {  text: 'РџСЂРёР· 1, С‚РµРїРµСЂСЊ С‚С‹ РїРёРґСЂ  Р»РѕРІРё РїСЂРѕРјРѕРєРѕРґ РІ С‡Рі',img:'file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/222.png', color: '#FF0000' },
+            {  text: 'РџСЂРёР· 2, С‚РµРїРµСЂСЊ С‚С‹ РїРёРґСЂ  Р»РѕРІРё РіР»Р°РІС‹РЅР№ РїСЂРёР·',img:'file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/222.png', color: '#FFFFFF' },
+            { text: 'РџСЂРёР· 3, С‚РµРїРµСЂСЊ С‚С‹ РїРёРґСЂ  С„РёРі С‚Рµ', img:'file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/222.png', color: '#FF0000' },
+            { text: 'РџСЂРёР· 4, С‚РµРїРµСЂСЊ С‚С‹ РїРёРґСЂ  Р»РѕРІРё РїСЂРѕРјРѕ РЅР° РР’Р', img:'file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/222.png', color: '#FFFFFF' },
+            {text: 'РџСЂРёР· 5, С‚РµРїРµСЂСЊ С‚С‹ РїРёРґСЂ  РїРѕРєР° РЅРµ РїСЂРёРґСѓРјР°Р» С€Рѕ С‚Рµ', img:'file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/222.png',  color: '#FF0000' },
+            { text: 'РџСЂРёР· 6, С‚РµРїРµСЂСЊ С‚С‹ РїРёРґСЂ С„РёРі С‚Рµ', img:'file:///C:/Users/Р’Р°СЃСЏ/Desktop/72ppi/222.png', color: '#FFFFFF' }
+        ]; // РњР°СЃСЃРёРІ СЃРµРєС‚РѕСЂРѕРІ СЃ С‚РµРєСЃС‚РѕРј (С‚РµРїРµСЂСЊ 7, РєР°СЃС‚РѕРјРёР·РёСЂСѓР№С‚Рµ Р·РґРµСЃСЊ)
 
         const wheel = document.getElementById('wheel');
         const spinButton = document.getElementById('spinButton');
         const modal = document.getElementById('resultModal');
         const resultText = document.getElementById('resultText');
 
-        // Добавляем переменную для попыток
-        let attempts = 1;  // Одна попытка
+        // Р”РѕР±Р°РІР»СЏРµРј РїРµСЂРµРјРµРЅРЅСѓСЋ РґР»СЏ РїРѕРїС‹С‚РѕРє
+        let attempts = 1;  // РћРґРЅР° РїРѕРїС‹С‚РєР°
 
-        // Обновить надписи в секторах
+        // РћР±РЅРѕРІРёС‚СЊ РЅР°РґРїРёСЃРё РІ СЃРµРєС‚РѕСЂР°С…
         function updateLabels() {
             const labels = document.querySelectorAll('.section-label');
                 const img = label.querySelector('img');
-                label.querySelector('span').textContent = sections[index].text; // Предполагаем, что текст в span, но в HTML это просто текст после img
-                // Фактически, текст после <img>, так что:
+                label.querySelector('span').textContent = sections[index].text; // РџСЂРµРґРїРѕР»Р°РіР°РµРј, С‡С‚Рѕ С‚РµРєСЃС‚ РІ span, РЅРѕ РІ HTML СЌС‚Рѕ РїСЂРѕСЃС‚Рѕ С‚РµРєСЃС‚ РїРѕСЃР»Рµ img
+                // Р¤Р°РєС‚РёС‡РµСЃРєРё, С‚РµРєСЃС‚ РїРѕСЃР»Рµ <img>, С‚Р°Рє С‡С‚Рѕ:
                 const textNode = label.lastChild;
                 if (textNode.nodeType === Node.TEXT_NODE) {
                     textNode.textContent = sections[index].text;
@@ -327,15 +327,15 @@
 
     function spinWheel() {
         if (attempts > 0) {
-            attempts--;  // Уменьшаем попытки
+            attempts--;  // РЈРјРµРЅСЊС€Р°РµРј РїРѕРїС‹С‚РєРё
 
             spinButton.disabled = true;
-            spinButton.textContent = 'Крутится...';
+            spinButton.textContent = 'РљСЂСѓС‚РёС‚СЃСЏ...';
 
             const fullSpins = 5 + Math.random() * 5;
-            const availableIndices = [0, 2, 3, 4, 5]; // Исключаем индекс 1 (главный приз)
-            const sectionIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)]; // Случайный из доступных
-            const extraDegrees = sectionIndex * 60 + Math.random() * 60; // 60 градусов на сектор
+            const availableIndices = [0, 2, 3, 4, 5]; // РСЃРєР»СЋС‡Р°РµРј РёРЅРґРµРєСЃ 1 (РіР»Р°РІРЅС‹Р№ РїСЂРёР·)
+            const sectionIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)]; // РЎР»СѓС‡Р°Р№РЅС‹Р№ РёР· РґРѕСЃС‚СѓРїРЅС‹С…
+            const extraDegrees = sectionIndex * 60 + Math.random() * 60; // 60 РіСЂР°РґСѓСЃРѕРІ РЅР° СЃРµРєС‚РѕСЂ
             const totalRotation = (fullSpins * 360) + extraDegrees;
 
             wheel.style.transform = `rotate(${totalRotation}deg)`;
@@ -345,10 +345,10 @@
                 let calculatedIndex = Math.floor((360 - normalizedAngle) / 60) % 6;
                 let winner = sections[calculatedIndex].text;
 
-                if (calculatedIndex === 1) { // Если попали на главный приз
-                    // Дополнительное вращение на 180° (на 3 сектора) без паузы, быстро (0.5 сек)
+                if (calculatedIndex === 1) { // Р•СЃР»Рё РїРѕРїР°Р»Рё РЅР° РіР»Р°РІРЅС‹Р№ РїСЂРёР·
+                    // Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ РІСЂР°С‰РµРЅРёРµ РЅР° 180В° (РЅР° 3 СЃРµРєС‚РѕСЂР°) Р±РµР· РїР°СѓР·С‹, Р±С‹СЃС‚СЂРѕ (0.5 СЃРµРє)
                     const extraRotation = totalRotation + 180;
-                    wheel.style.transition = 'transform 0.6s ease-in'; // Быстрая анимация без паузы
+                    wheel.style.transition = 'transform 0.6s ease-in'; // Р‘С‹СЃС‚СЂР°СЏ Р°РЅРёРјР°С†РёСЏ Р±РµР· РїР°СѓР·С‹
                     wheel.style.transform = `rotate(${extraRotation}deg)`;
 
                     setTimeout(() => {
@@ -357,19 +357,19 @@
                         winner = sections[calculatedIndex].text;
                         resultText.innerHTML = winner;
                         modal.style.display = 'block';
-                        // После спина НЕ сбрасываем кнопку — она остаётся отключённой
-                        spinButton.textContent = 'Попытки закончились :(';
-                    }, 500); // Ждём 0.5 секунды быстрой анимации
+                        // РџРѕСЃР»Рµ СЃРїРёРЅР° РќР• СЃР±СЂР°СЃС‹РІР°РµРј РєРЅРѕРїРєСѓ вЂ” РѕРЅР° РѕСЃС‚Р°С‘С‚СЃСЏ РѕС‚РєР»СЋС‡С‘РЅРЅРѕР№
+                        spinButton.textContent = 'РџРѕРїС‹С‚РєРё Р·Р°РєРѕРЅС‡РёР»РёСЃСЊ :(';
+                    }, 500); // Р–РґС‘Рј 0.5 СЃРµРєСѓРЅРґС‹ Р±С‹СЃС‚СЂРѕР№ Р°РЅРёРјР°С†РёРё
                 } else {
                     resultText.innerHTML = winner;
                     modal.style.display = 'block';
-                    // После спина НЕ сбрасываем кнопку — она остаётся отключённой
-                    spinButton.textContent = 'Попытки закончились :(';
+                    // РџРѕСЃР»Рµ СЃРїРёРЅР° РќР• СЃР±СЂР°СЃС‹РІР°РµРј РєРЅРѕРїРєСѓ вЂ” РѕРЅР° РѕСЃС‚Р°С‘С‚СЃСЏ РѕС‚РєР»СЋС‡С‘РЅРЅРѕР№
+                    spinButton.textContent = 'РџРѕРїС‹С‚РєРё Р·Р°РєРѕРЅС‡РёР»РёСЃСЊ :(';
                 }
-            }, 4000); // Основной спин 4 секунды
+            }, 4000); // РћСЃРЅРѕРІРЅРѕР№ СЃРїРёРЅ 4 СЃРµРєСѓРЅРґС‹
         } else {
-            // Если попытки закончились, показываем alert
-            alert('попытки закончились :(');
+            // Р•СЃР»Рё РїРѕРїС‹С‚РєРё Р·Р°РєРѕРЅС‡РёР»РёСЃСЊ, РїРѕРєР°Р·С‹РІР°РµРј alert
+            alert('РїРѕРїС‹С‚РєРё Р·Р°РєРѕРЅС‡РёР»РёСЃСЊ :(');
         }
     }
 
