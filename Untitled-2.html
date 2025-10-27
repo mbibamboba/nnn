@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=1251">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Карусель с 6 кусочками</title>
+ <title>Карусель с 5 кусочками</title>
  <style>
       body {
             font-family: Arial, sans-serif;
@@ -53,7 +53,7 @@
             50% { opacity: 0.7; transform: translate(-50%, -50%) rotate(var(--angle)) translateY(-250px) scale(1.1); }
         }
         .wheel {
-            width: 470px;
+           width: 470px;
             height: 470px;
             border-radius: 50%;
             position: relative;
@@ -62,12 +62,11 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
             transition: transform 4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Плавная анимация вращения */
             background: conic-gradient(
-                #840cd5 0deg 60deg,     /* Красный сектор 1 */
-                #ffe345 60deg 120deg,   /* Золотой сектор 2 (главный приз) */
-                #840cd5 120deg 180deg,  /* Красный сектор 2 */
-                #e1e1e1 180deg 240deg,  /* Белый сектор 2 */
-                #840cd5 240deg 300deg,  /* Красный сектор 3 */
-                #e1e1e1 300deg 360deg   /* Белый сектор 3 */
+                #e1e1e1 0deg 72deg,     /* Сектор 1 */
+                #ffe345 72deg 144deg,   /* Сектор 2 (главный приз) */
+                #840cd5 144deg 216deg,  /* Сектор 3 */
+                #e1e1e1 216deg 288deg,  /* Сектор 4 */
+                #840cd5 288deg 360deg   /* Сектор 5 */
             );
             margin: 0 auto;
         }
@@ -251,30 +250,29 @@
                 <div class="center-lamp"></div>
             </div>
             <!-- Надписи и картинки в секторах (кастомизируйте текст и src картинок здесь) -->
- <div class="section-label" style="--rotation: 30deg; --label-rotation: -3deg;">              
-         <img  style="width: 55px; height: 55px;" src="https://psv4.userapi.com/s/v1/d2/wdWVEiP69O7XJ4LnVXnuSdjOD5o7YSJNhvdn_UvCv5wiSX4UdtaQBUl2ipWAib0Bq4Y_iDBWtket7vZ2NQI8LaJEJEk4LDO7qNRISJcjal7O4vKKP117BO5GnAX12c7i25ul8en26Tz5/222.png" alt="Приз 1">
-               <b style="font-size: 13px; color: #ffffff;">   ПРОМОКОД НА 40%</br> В ЧИТАЙ ГОРОД</b> 
+            <div class="section-label" style="--rotation: 36deg; --label-rotation: 0deg;">              
+         <img  style="width: 55px; height: 55px;" src="https://psv4.userapi.com/s/v1/d2/wuoiYHdxGYRn_4NiTgl4bn0sq89OTIvREs-EAw_ppwubnsfBAjbrY-gcWw_owXN7gS8wyMlxVM6V01x2BDN7Dbk8dYny4wdWnKj0caS02TWc90iV7n71sBkbdn72fm3j4mKanl9vqBR6/Montazhnaya_oblast_1.png" alt="Приз 1">
+               <b style="font-size: 13px; color: #840cd5;">  ПРИЗ</b> 
             </div>
-            <div class="section-label" style="--rotation: 90deg; --label-rotation: 5deg;">
-                <img style="width: 60px; height: 60px;" src="https://psv4.userapi.com/s/v1/d2/FuOVHeRXv8TFWd671AbrY-meCmix19BHTy5duTkLmHPB1oRbSitcWR2ONp7fDfndBb3FKf_gK-OkoOv8fsK5RXkKI_rvj6xvhFvr1Y_OF81oI8aW1BrlUFciun3qz5ygZWT6WwJRxBai/1.png" alt="Приз 2">
+            <div class="section-label" style="--rotation: 108deg; --label-rotation: 0deg;">
+                <img style="width: 60px; height: 60px;" src="https://psv4.userapi.com/s/v1/d2/dc3R18tdh7fdGgkOSeGJurSeFWdH8S7JVRcKRZjuhdVBlDdt7jAiKQ2R3bBFwlfe_V6n-G-NCBOF1uI6fXqSagsaKk1rlNOXcwC-deoMMtNOLOJwqXgYSQV00iJFgtXFeV1eOzPOJ9vm/308278962081201-no-bg-preview_carve_photos.png" alt="Приз 2">
               <b style="font-size: 20px; color: #fe5d00;">  ГЛАНЫЙ </br> ПРИЗ  </b> 
             </div>
-            <div class="section-label" style="--rotation: 150deg; --label-rotation: -5deg;">
-                <img  style="width: 55px; height: 55px;" src="https://psv4.userapi.com/s/v1/d2/icVEtHjFhCUV1W4mTx1kAalzEVJd5LAKEI4ItAzIXDvDRUqUhiStLCU5PWAS3AWYfo0jJXIXU9xTVggSU9yLxL2RVXbqAIf6ZoJVXSm047mqhQMjWWCaSjGLuewYaIW_hMgvNPxTG57G/333.png" alt="Приз 3">
-                <b style="color: #ffffff;">    НИЧЕГО</b>       
+            <div class="section-label" style="--rotation: 180deg; --label-rotation: 0deg;">
+                <img  style="width: 55px; height: 55px;" src="https://psv4.userapi.com/s/v1/d2/rgjc999bdl9pILhAI2t8T4I_9wa-XMntJjAAA-pfEoEb4zl8GTzKzdUbxjl4Kcpte211ITM0P6z_cAaJ5hi1UU9ncpwGWwtjmI1HbqP0jXJQsey7eIXF37ylaL5srjyL6bKDuav722cD/Montazhnaya_oblast_1_kopia.png" alt="Приз 3">
+                <b style="color: #ffffff;">     ПРИЗ </b>       
             </div>
-            <div class="section-label" style="--rotation: 210deg; --label-rotation: 5deg;">
-                <img  style="width: 55px; height: 55px;" src="https://psv4.userapi.com/s/v1/d2/uFOZQh1j3hNNjR7BNmtND3lGciZRzw9ic6DvNytfFZgWaVmZbhtPUFapSX745oJDNd0m7iH3VlSETlx6PV2lor026hqBb4VNmrSPk4yMCP1HuD1d8kaBx0x4UZWbP3iKn-YPpSFFcMgD/2.png" alt="Приз 4">
-                     <b style="color: #840cd5;">   ПРОМОКОД </br>НА 10% НА ИВИ</b>
+            <div class="section-label" style="--rotation: 252deg; --label-rotation: 0deg;">
+                <img  style="width: 55px; height: 55px;" src="https://psv4.userapi.com/s/v1/d2/wuoiYHdxGYRn_4NiTgl4bn0sq89OTIvREs-EAw_ppwubnsfBAjbrY-gcWw_owXN7gS8wyMlxVM6V01x2BDN7Dbk8dYny4wdWnKj0caS02TWc90iV7n71sBkbdn72fm3j4mKanl9vqBR6/Montazhnaya_oblast_1.png" alt="Приз 4">
+                     <b style="color: #840cd5;">   ПРИЗ</b>
 
             </div>
-            <div class="section-label" style="--rotation: 270deg; --label-rotation: -5deg;">
-               <b style="font-size: 60px; color: #ffffff;">   ?</b>
+            <div class="section-label" style="--rotation: 324deg; --label-rotation: 0deg;">
+                <img  style="width: 55px; height: 55px;" src="https://psv4.userapi.com/s/v1/d2/6U_NMQBac6mYeWOi_2Y9f6EQk6RoEYpAP6_hQafptsJcM8kA4vQRE-8MfCJMpL0ZeBWCqGRgQyhRBExOunHaxXVn9SxcMzhNpOqWZ3n2zD75Y8wJjCv6Vu15CsouCGKxHqoJExBOrWxm/Montazhnaya_oblast_3_kopia_2.png" alt="Приз 6">
+
+               <b style=" color: #ffffff;">  НИЧЕГО</b>
             </div>
-            <div class="section-label" style="--rotation: 330deg; --label-rotation: -5deg;">
-                <img  style="width: 55px; height: 55px;" src="https://psv4.userapi.com/s/v1/d2/ssaFZ0No89JetRETVU9vrb8w2eJIje9cH8F88stBplUAqyuqRrptP3tWaUC3deBoiqqPGlAH8KGUBsh-g3el-N6ksFDd5mayX6gfpZBmW9kdY4Me4vK_VnWdrNUmcBEz66_EgMCdposA/3.png" alt="Приз 6">
-              <b style="color: #840cd5;">     НИЧЕГО</b>
-            </div>
+        
         
         </div>
         </br></br>
@@ -298,8 +296,7 @@
             {  text: 'Приз 2, теперь ты пидр  лови главынй приз',img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FFFFFF' },
             { text: 'Приз 3, теперь ты пидр  фиг те', img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FF0000' },
             { text: 'Приз 4, теперь ты пидр  лови промо на ИВИ', img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FFFFFF' },
-            {text: 'Приз 5, теперь ты пидр  пока не придумал шо те', img:'file:///C:/Users/Вася/Desktop/72ppi/222.png',  color: '#FF0000' },
-            { text: 'Приз 6, теперь ты пидр фиг те', img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FFFFFF' }
+            { text: 'Приз 5, теперь ты пидр фиг те', img:'file:///C:/Users/Вася/Desktop/72ppi/222.png', color: '#FF0000' }
         ]; // Массив секторов с текстом (теперь 7, кастомизируйте здесь)
 
         const wheel = document.getElementById('wheel');
@@ -325,53 +322,51 @@
         }
        updateLabels();
 
-    function spinWheel() {
-        if (attempts > 0) {
-            attempts--;  // Уменьшаем попытки
+   
+        function spinWheel() {
+            if (attempts > 0) {
+                attempts--;  // Уменьшаем попытки
 
-            spinButton.disabled = true;
-            spinButton.textContent = 'Крутится...';
+                spinButton.disabled = true;
+                spinButton.textContent = 'Крутится...';
 
-            const fullSpins = 5 + Math.random() * 5;
-            const availableIndices = [0, 2, 3, 4, 5]; // Исключаем индекс 1 (главный приз)
-            const sectionIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)]; // Случайный из доступных
-            const extraDegrees = sectionIndex * 60 + Math.random() * 60; // 60 градусов на сектор
-            const totalRotation = (fullSpins * 360) + extraDegrees;
+                const fullSpins = 5 + Math.random() * 5;
+                const availableIndices = [0, 2, 3, 4]; // 3 приза (0,2,3) + 1 ничего (4); главный (1) исключён — 0%
+                const sectionIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)]; // Равномерно 25% на каждый
+                const extraDegrees = sectionIndex * 72 + Math.random() * 72; // 72° на сектор
+                const totalRotation = (fullSpins * 360) + extraDegrees;
 
-            wheel.style.transform = `rotate(${totalRotation}deg)`;
+                wheel.style.transform = `rotate(${totalRotation}deg)`;
 
-            setTimeout(() => {
-                let normalizedAngle = (totalRotation % 360 + 360) % 360;
-                let calculatedIndex = Math.floor((360 - normalizedAngle) / 60) % 6;
-                let winner = sections[calculatedIndex].text;
+                setTimeout(() => {
+                    let normalizedAngle = (totalRotation % 360 + 360) % 360;
+                    let calculatedIndex = Math.floor((360 - normalizedAngle) / 72) % 5;
+                    let winner = sections[calculatedIndex].text;
 
-                if (calculatedIndex === 1) { // Если попали на главный приз
-                    // Дополнительное вращение на 180° (на 3 сектора) без паузы, быстро (0.5 сек)
-                    const extraRotation = totalRotation + 180;
-                    wheel.style.transition = 'transform 0.6s ease-in'; // Быстрая анимация без паузы
-                    wheel.style.transform = `rotate(${extraRotation}deg)`;
+                    if (calculatedIndex === 1) { // Если попали на главный (редко, ~0%)
+                        // Дополнительное вращение на 180°
+                        const extraRotation = totalRotation + 180;
+                        wheel.style.transition = 'transform 0.6s ease-in';
+                        wheel.style.transform = `rotate(${extraRotation}deg)`;
 
-                    setTimeout(() => {
-                        normalizedAngle = (extraRotation % 360 + 360) % 360;
-                        calculatedIndex = Math.floor((360 - normalizedAngle) / 60) % 6;
-                        winner = sections[calculatedIndex].text;
+                        setTimeout(() => {
+                            normalizedAngle = (extraRotation % 360 + 360) % 360;
+                            calculatedIndex = Math.floor((360 - normalizedAngle) / 72) % 5;
+                            winner = sections[calculatedIndex].text;
+                            resultText.innerHTML = winner;
+                            modal.style.display = 'block';
+                            spinButton.textContent = 'Попытки закончились';
+                        }, 500);
+                    } else {
                         resultText.innerHTML = winner;
                         modal.style.display = 'block';
-                        // После спина НЕ сбрасываем кнопку — она остаётся отключённой
-                        spinButton.textContent = 'Попытки закончились :(';
-                    }, 500); // Ждём 0.5 секунды быстрой анимации
-                } else {
-                    resultText.innerHTML = winner;
-                    modal.style.display = 'block';
-                    // После спина НЕ сбрасываем кнопку — она остаётся отключённой
-                    spinButton.textContent = 'Попытки закончились :(';
-                }
-            }, 4000); // Основной спин 4 секунды
-        } else {
-            // Если попытки закончились, показываем alert
-            alert('попытки закончились :(');
+                        spinButton.textContent = 'Попытки закончились';
+                    }
+                }, 4000); // Основной спин 4 секунды
+            } else {
+                alert('попытки закончились');
+            }
         }
-    }
 
     function closeModal() {
         modal.style.display = 'none';
